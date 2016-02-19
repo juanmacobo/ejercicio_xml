@@ -1,7 +1,3 @@
-# ejercicio_xml
-
-url ejercicio xml: https://www.zaragoza.es/api/recurso/urbanismo-infraestructuras/incidencia/accidente.xml
-
 #Enunciado ejercicios xml:
 1- Lista el identificador de accidente con el tipo de accidente que le corresponde.
 
