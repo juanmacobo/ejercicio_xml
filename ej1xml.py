@@ -7,4 +7,10 @@ arbol=etree.parse('ejercicioxml.xml')
 
 raiz=arbol.getroot()
 
-
+accidentes=raiz.findall("result/accidente")
+for accidente in accidentes:
+	print accidente.find("id").text
+	print accidente.find("type").text
+	print accidente.find("reason").text
+	print ""
+	
