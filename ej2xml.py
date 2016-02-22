@@ -6,3 +6,10 @@ from lxml import etree
 arbol=etree.parse('ejercicioxml.xml')
 
 raiz=arbol.getroot()
+
+accidentes=raiz.xpath("//result/accidente")
+
+for contador in accidentes:
+	print contador.find("year").text
+	
+	

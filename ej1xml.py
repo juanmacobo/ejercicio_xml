@@ -13,4 +13,9 @@ for accidente in accidentes:
 	print accidente.find("type").text
 	print accidente.find("reason").text
 	print ""
+
+	MEJORAR 
+	PONER ID: ...
+	TIPO:...
+	RAZON: ...
 	
