@@ -39,3 +39,5 @@ for numero in anios:
 
 	#por cada año mostramos el año y el contador ya que el contador se reiniciara con el nuevo año
 	print numero ,"ha tenido",cont,"accidentes"
+
+	
