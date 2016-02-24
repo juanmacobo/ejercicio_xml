@@ -9,3 +9,8 @@ raiz=arbol.getroot()
 
 direccion=raw_input("Dime una dirección: ")
 direcciones=raiz.xpath("//accidente/firstAddress")
+
+for lugar in direcciones:
+	if direccion == lugar.find("firstAddress").text:
+		print lugar.find("firstAddress").text
+
