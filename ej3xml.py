@@ -7,3 +7,5 @@ arbol=etree.parse('ejercicioxml.xml')
 
 raiz=arbol.getroot()
 
+direccion=raw_input("Dime una dirección: ")
+direcciones=raiz.xpath("//accidente/firstAddress")
