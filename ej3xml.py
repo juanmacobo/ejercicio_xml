@@ -8,9 +8,9 @@ arbol=etree.parse('ejercicioxml.xml')
 raiz=arbol.getroot()
 
 direccion=raw_input("Dime una dirección: ")
-direcciones=raiz.xpath("//accidente/firstAddress")
+direcciones=raiz.xpath("///accidente")
 
 for lugar in direcciones:
-	if direccion == lugar.find("firstAddress").text:
+	if lugar.find("firstAddress").text in direccion.upper():
 		print lugar.find("firstAddress").text
 
