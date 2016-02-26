@@ -22,4 +22,5 @@ for afec in afectados:
 		print "ID del afectado: ",afec.find("id").text
 		print "EDAD del afectado: ",afec.find("age").text
 		print "ESTADO del afectado: ",afec.find("status").text
-	
+		print ""
+		
