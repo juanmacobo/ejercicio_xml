@@ -7,3 +7,11 @@ arbol=etree.parse('ejercicioxml.xml')
 
 raiz=arbol.getroot()
 
+afectadoid=raw_input("Dime la id del afectado: ")
+afectados=raiz.xpath("////afectado/afectado")
+
+for afec in afectados:
+	if afec.find("id").text == afectadoid: 
+		print afec.find("id").text
+		print afec.find("age").text
+		print afec.find("status").text
