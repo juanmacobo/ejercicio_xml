@@ -10,14 +10,14 @@ raiz=arbol.getroot()
 accidentes=raiz.xpath("////afectado")
 
 afectados=[]
-
+contador=0
 for afec in accidentes:
-	if not afec.tag in afectados:
-		afectados.append(afec.tag)
-for num in afectados:
 	cont=0
-	numafec=raiz.xpath("////afectado/afectado")
-	for numero in numafec:
-		if numero.tag > 1:
+	for numero in afec:
+		if len(numero) > 1:
 			cont=cont+1	
-	print cont			
+	if cont>1:
+		#print cont
+		contador=contador+1
+print "Hay un total de",contador,"accidentes con mas de un afectado"
+
