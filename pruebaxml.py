@@ -2,9 +2,7 @@
 
 #Prueba. Programa que pida un año y genere un fichero html con la siguiente información.
 
-f=open("index.html","r")
-s=f.readlines()
-f.close()
+f=open("index.html","w")
 
 from lxml import etree
 arbol=etree.parse('ejercicioxml.xml')
