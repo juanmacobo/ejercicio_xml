@@ -8,3 +8,8 @@
 4- Pedir por teclado el id del afectado y mostrar su edad y su estado.
  
 5- Cuenta el numero de accidentes que tienen más de un afectado.
+
+prueba- Programa que pida un año y genere un fichero html con la siguiente informació:
+	....
+	....
+	Estas líneas se repetirán con todos los accidentes y se mostrará en la lista todos los afectados.
