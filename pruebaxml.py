@@ -2,6 +2,10 @@
 
 #Prueba. Programa que pida un año y genere un fichero html con la siguiente información.
 
+f=open("index.html","r")
+s=f.readlines()
+f.close()
+
 from lxml import etree
 arbol=etree.parse('ejercicioxml.xml')
 
@@ -13,11 +17,8 @@ accidentes=raiz.xpath("///accidente")
 
 for a in accidentes:
 	if a.find("year").text == anio:
-		print a.find("type").text
-		print a.find("reason").text
-		print raiz.find("result/accidente/afectado/afectado/age").text
-		#afec=raiz.xpath("////afectado/afectado")
-		#for af in afec:
-		#	print af.find("age").text
-
-
+		print "<h1>",a.find("type").text,"</h1>"
+		print "<p>",a.find("reason").text,"</p>"
+		print "<ul>"
+		print "<li>",raiz.find("result/accidente/afectado/afectado/age").text,"</li>"
+		print "</ul>"
